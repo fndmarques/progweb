@@ -6,6 +6,7 @@
 </head>
 <body>
 	<form action="alteraOs" method="POST">
+	<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario -->
 		<input type="hidden" id="id" name="id" value="${os.id}" /><br />
 		
 		Data de Abertura: <input type="text" id="dataAbertura" name="dataAbertura" value="${os.os_DataAbertura}"/><br />
@@ -17,7 +18,7 @@
 		Descrição: <input type="text" id="descricao" name="descricao" value="${aluno.os_Descricao}" /><br /> 
 		Solução: <input type="text" id="solucao" name="solucao" value="${os.os_Solucao}"/><br />
 		Data de Atendimento: <input type="text" id="dataAtendimento" name="dataAtendimento" value="${os.os_DataAbertura}"/><br />
-		Data de Concçusão: <input type="text" id="dataConclusao" name="dataConclusao" value="${os.os_DataConclusao}"/><br />
+		Data de Conclusão: <input type="text" id="dataConclusao" name="dataConclusao" value="${os.os_DataConclusao}"/><br />
 		Observações: <input type="text" id="obs" name="obs" value="${os.os_Obs}"/><br />
 		
 		<input type="submit" value="Alterar" /> 
