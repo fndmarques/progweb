@@ -1,5 +1,7 @@
 package br.edu.ufabc.os.modelo;
 
+import org.hibernate.annotations.*;
+
 @Entity
 @Table(name="suporte", schema="public")
 public class Os {
