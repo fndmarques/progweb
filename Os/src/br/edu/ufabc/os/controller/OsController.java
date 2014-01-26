@@ -16,7 +16,7 @@ import br.edu.ufabc.os.modelo.Os;
 public class OsController {
 
 	// insere os
-	@RequestMapping("insereOs")
+	@RequestMapping("novaOs")
 	 public String insere(Os os) {
 	EntityManagerFactory factory = Persistence
 	.createEntityManagerFactory("os");

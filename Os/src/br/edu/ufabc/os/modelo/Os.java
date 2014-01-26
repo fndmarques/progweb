@@ -2,8 +2,6 @@ package br.edu.ufabc.os.modelo;
 
 import javax.persistence.*;
 
-//import org.hibernate.*;
-
 @Entity
 @Table(name="suporte", schema="public")
 public class Os {
