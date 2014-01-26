@@ -77,12 +77,14 @@ public class OsController {
 	List<Os> suporte = manager
 	.createQuery("select a from Os as a").getResultList();
 	// verificar
-	model.addAttribute("alunos", alunos);
+	model.addAttribute("os", os);
 	manager.close();
 	return "os/lista";
 	}
 	
 	
+	// verificar em lista os a linha abaixo: alunos alunos -> os os, singular
+	// model.addAttribute("alunos", alunos);
 	
 	/* - ALUNO-OLD
 	@RequestMapping("insereAluno")
