@@ -1,7 +1,7 @@
 package br.edu.ufabc.os.modelo;
 
 @Entity
-@Table(name="os", schema="public")
+@Table(name="suporte", schema="public")
 public class Os {
 	@Id
 	@GeneratedValue
