@@ -6,7 +6,7 @@
 </head>
 <body>
 	<form action="alteraOs" method="POST">
-	<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario -->
+	<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario = CONCLUÍDO-->
 		<input type="hidden" id="id" name="id" value="${os.id}" /><br />
 		
 		Data de Abertura: <input type="text" id="dataAbertura" name="dataAbertura" value="${os.os_DataAbertura}"/><br />

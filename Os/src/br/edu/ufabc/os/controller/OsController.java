@@ -77,7 +77,7 @@ public class OsController {
 	List<Os> suporte = manager
 	.createQuery("select a from Os as a").getResultList();
 	// verificar
-	model.addAttribute("os", os);
+	//model.addAttribute("os", os);
 	manager.close();
 	return "os/lista";
 	}
