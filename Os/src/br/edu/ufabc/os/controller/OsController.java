@@ -1,5 +1,8 @@
 package br.edu.ufabc.os.controller;
 
+import java.util.List;
+
+import javax.persistence.*;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
@@ -8,11 +11,80 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.edu.ufabc.os.dao.OsDAO;
 import br.edu.ufabc.os.modelo.Os;
 
 public class OsController {
 
+	// insere os
+	@RequestMapping("insereOs")
+	 public String insere(Os os) {
+	EntityManagerFactory factory = Persistence
+	.createEntityManagerFactory("os");
+	EntityManager manager = factory.createEntityManager();
+	manager.getTransaction().begin();
+	manager.persist(os);
+	manager.getTransaction().commit();
+	manager.close();
+	return "redirect:listaOs";
+	}
+	
+	// altera os
+	@RequestMapping("alteraOs")
+	public String altera(Os os) {
+	EntityManagerFactory factory = Persistence
+	.createEntityManagerFactory("os");
+	EntityManager manager = factory.createEntityManager();
+	manager.getTransaction().begin();
+	manager.merge(os);
+	manager.getTransaction().commit();
+	manager.close();
+	return "redirect:listaOs";
+	}
+	
+	// remove os
+	@RequestMapping("removeAluno")
+	public String remove(Os os) {
+	EntityManagerFactory factory = Persistence
+	.createEntityManagerFactory("os");
+	EntityManager manager = factory.createEntityManager();
+	manager.getTransaction().begin();
+	Os encontrado = manager.find(Os.class, os.getId());
+	manager.remove(encontrado);
+	manager.getTransaction().commit();
+	manager.close();
+	return "redirect:listaOs";
+	}
+	
+	// exibe os
+	@RequestMapping("exibeOs")
+	public String exibe(Long id, Model model) {
+	EntityManagerFactory factory = Persistence
+	.createEntityManagerFactory("os");
+	EntityManager manager = factory.createEntityManager();
+	Os os = manager.find(Os.class, id);
+	manager.close();
+	model.addAttribute("os", os);
+	return "os/exibe";
+	}
+	
+	// lista os
+	@RequestMapping("listaOs")
+	public String lista(Model model) {
+	EntityManagerFactory factory = Persistence
+	.createEntityManagerFactory("os");
+	EntityManager manager = factory.createEntityManager();
+	@SuppressWarnings("unchecked")
+	List<Os> suporte = manager
+	.createQuery("select a from Os as a").getResultList();
+	// verificar
+	model.addAttribute("alunos", alunos);
+	manager.close();
+	return "os/lista";
+	}
+	
+	
+	
+	/* - ALUNO-OLD
 	@RequestMapping("insereAluno")
 	public String insere(@Valid Aluno aluno, BindingResult result) {
 		if (result.hasErrors()) {
@@ -68,5 +140,6 @@ public class OsController {
 		dao.finaliza(id);
 		response.setStatus(200);
 	}
+	*/
 
 }

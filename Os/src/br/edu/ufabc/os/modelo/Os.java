@@ -1,6 +1,8 @@
 package br.edu.ufabc.os.modelo;
 
-import org.hibernate.annotations.*;
+import javax.persistence.Entity;
+
+import org.hibernate.*;
 
 @Entity
 @Table(name="suporte", schema="public")
@@ -10,6 +12,8 @@ public class Os {
 	private Long id;
 	@Column(name="os_DataAbertura")
 	private String os_DataAbertura;
+	@Column(name="os_OsTitulo")
+	private String os_OsTitulo;
 	@Column(name="empresa")
 	private String empresa;
 	@Column(name="nome")
