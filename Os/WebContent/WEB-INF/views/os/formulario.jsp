@@ -7,11 +7,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="insereAluno" method="post">
- Nome: <br /> <input type="text" name="nome" /><br />
- Email: <br /> <input type="text" name="email" /><br />
- Endereço: <br /> <input type="text" name="endereco" /><br />
- Formado: <br /> <input type="text" name="formado" /><br />
+<form action="insereOs" method="post">
+<!-- Adicionar insereOs no request mapping do OsController para inserir nova Os -->
+ 
+Data de Abertura: <input type="text" name="dataAbertura" /><br />
+Título: <input type="text" name="titulo" /><br />
+Empresa: <input type="text" name="empresa" /><br />
+Nome: <input type="text" name="nome"/><br />
+Telefone <input type="text" name="telefone" /><br />
+Email: <input type="text" name="email" /><br /> 
+Descrição: <input type="text" name="descricao" /><br />
+Solução: <input type="text" name="solucao" /><br />
+Data de Atendimento: <input type="text" name="dataAtendimento" /><br />
+Data de Concçusão: <input type="text" name="dataConclusao" /><br />
+Observações: <input type="text" name="obs" /><br />
+ 
  <input type="submit" value="Inserir">
  </form>
 </body>

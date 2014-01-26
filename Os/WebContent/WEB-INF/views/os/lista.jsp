@@ -42,11 +42,13 @@
 				<td>${os.os_DataConclusao}</td>
 				<td>${os.os_Obs}</td>
 				<td><a href="removeOs?id=${os.id}">Remover</a></td>
+				<!--  Colocar removeOs como requestMapping no OsController para remover OS -->
 			</tr>
 		</c:forEach>
 	</table>
 	<br>
 	<a href="novaOs">Inserir Nova OS</a>
+	<!-- Colocar "novaOs" como request mapping no OsController para redirecionar para os/formulario-->
 	
 </body>
 </html>

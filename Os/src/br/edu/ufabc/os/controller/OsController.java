@@ -42,7 +42,7 @@ public class OsController {
 	}
 	
 	// remove os
-	@RequestMapping("removeAluno")
+	@RequestMapping("removeOs")
 	public String remove(Os os) {
 	EntityManagerFactory factory = Persistence
 	.createEntityManagerFactory("os");
