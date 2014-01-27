@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>OS adicionada</title>
 </head>
-<body>Ordem de Serviço adicionada com sucesso! <b>(Id: ${os.id})</b> 
+<body>Ordem de Serviço <h3><b>(Id: ${os.id})</b></h3> adicionada com sucesso! 
 <!-- Inserir link para voltar para Listagem de Os's = CONCLUÍDO-->
 <br><br>
 <br><a href="novaOs">Inserir nova OS</a>

@@ -17,7 +17,7 @@
 		Email: <input type="text" id="email" name="email" value="${os.email}" /><br /> 
 		Descrição: <input type="text" id="descricao" name="descricao" value="${os.os_Descricao}" /><br /> 
 		Solução: <input type="text" id="solucao" name="solucao" value="${os.os_Solucao}"/><br />
-		Data de Atendimento: <input type="text" id="dataAtendimento" name="dataAtendimento" value="${os.os_DataAbertura}"/><br />
+		Prioridade: <input type="text" id="prioridade" name="prioridade" value="${os.os_Prioridade}"/><br />
 		Data de Conclusão: <input type="text" id="dataConclusao" name="dataConclusao" value="${os.os_DataConclusao}"/><br />
 		Observações: <input type="text" id="obs" name="obs" value="${os.os_Obs}"/><br />
 		

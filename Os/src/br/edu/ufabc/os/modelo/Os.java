@@ -24,8 +24,8 @@ public class Os {
 	private String os_Descricao;
 	@Column(name="os_Solucao")
 	private String os_Solucao;
-	@Column(name="os_DataAtendimento")
-	private String os_DataAtendimento;
+	@Column(name="os_Prioridade")
+	private String os_Prioridade;
 	@Column(name="os_DataConclusao")
 	private String os_DataConclusao;
 	@Column(name="os_Obs")
@@ -86,11 +86,11 @@ public class Os {
 	public void setOs_Solucao(String os_Solucao) {
 		this.os_Solucao = os_Solucao;
 	}
-	public String getOs_DataAtendimento() {
-		return os_DataAtendimento;
+	public String getOs_Prioridade() {
+		return os_Prioridade;
 	}
-	public void setOs_DataAtendimento(String os_DataAtendimento) {
-		this.os_DataAtendimento = os_DataAtendimento;
+	public void setOs_Prioridade(String os_Prioridade) {
+		this.os_Prioridade = os_Prioridade;
 	}
 	public String getOs_DataConclusao() {
 		return os_DataConclusao;

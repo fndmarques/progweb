@@ -26,7 +26,7 @@
 			<td><b><font color="#FFFFFF">E-mail</font></b></td>
 			<td><b><font color="#FFFFFF">Descrição</font></b></td>
 			<td><b><font color="#FFFFFF">Solução</font></b></td>
-			<td><b><font color="#FFFFFF">Data de Atendimento</font></b></td>
+			<td><b><font color="#FFFFFF">Prioridade</font></b></td>
 			<td><b><font color="#FFFFFF">Data de Conclusão</font></b></td>
 			<td><b><font color="#FFFFFF">Observações</font></b></td>
 		</tr>
@@ -49,7 +49,8 @@
 			<td>${os.telefone}</td>
 			<td>${os.email}</td>
 			<td>${os.os_Descricao}</td>
-			<td>${os.os_DataAtendimento}</td>
+			<td>${os.os_Solucao}</td>
+			<td>${os.os_Prioridade}</td>
 			<td>${os.os_DataConclusao}</td>
 			<td>${os.os_Obs}</td>
 			<td><a href="removeOs?id=${os.id}">Remover</a></td>
