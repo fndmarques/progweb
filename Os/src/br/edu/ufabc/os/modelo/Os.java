@@ -10,8 +10,8 @@ public class Os {
 	private Long id;
 	@Column(name="os_DataAbertura")
 	private String os_DataAbertura;
-	@Column(name="os_OsTitulo")
-	private String os_OsTitulo;
+	@Column(name="os_Titulo")
+	private String os_Titulo;
 	@Column(name="empresa")
 	private String empresa;
 	@Column(name="nome")
@@ -43,6 +43,12 @@ public class Os {
 	}
 	public void setOs_DataAbertura(String os_DataAbertura) {
 		this.os_DataAbertura = os_DataAbertura;
+	}
+	public String getOs_Titulo() {
+		return os_Titulo;
+	}
+	public void setOs_Titulo(String os_Titulo) {
+		this.os_Titulo = os_Titulo;
 	}
 	public String getEmpresa() {
 		return empresa;
