@@ -49,9 +49,11 @@ public class OsController {
 
 	// altera os
 	@RequestMapping("alteraOs")
+	//public String altera(String osconcluida, Model model) {
 	public String altera(Os os) {
+		//exibeOs?id=${os.id}
 		// verifica se o chamado foi fechado e grava data e hora
-		
+		System.out.println(os.getOs_DataConclusao());
 		if (os.getOs_DataConclusao().equals("SIM")) {
 				// configura data/hora
 				//Date agora = new Date();

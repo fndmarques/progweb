@@ -6,7 +6,7 @@
 </head>
 <body>
 	<form action="alteraOs" method="post">
-		<!-- Adicionar alteraOs no request mapping do OsController para alterar a Os = CONCLUÍDO -->
+		<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario = CONCLUÍDO-->
 		<table>
 			<tr>
 				<td>Data de Abertura:<input type="text" readonly size="25"
@@ -107,6 +107,8 @@
 			value="${os.os_Obs}" /><br /> <input type="submit" value="Alterar" />
 
 	</form>
+	
+	
 	<a href=listaOs>Cancelar</a> e voltar para a listagem
 </body>
 </html>
