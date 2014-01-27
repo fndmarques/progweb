@@ -14,9 +14,11 @@ public class OsController {
 	// nova os - formulario
 	@RequestMapping("novaOs")
 	 public String form() {
-	  return "os/formulario";
+	  return "os/formulario.jsp";
 	 }
 	
+	
+	/*
 	// insere os
 	@RequestMapping("insereOs")
 	 public String insere(Os os) {
@@ -83,9 +85,11 @@ public class OsController {
 	manager.close();
 	return "os/lista";
 	}
+	*/
+
+	
 	
 	//Testando commit
-	
 	// verificar em lista os a linha abaixo: alunos alunos -> os os, singular
 	// model.addAttribute("alunos", alunos);
 	
