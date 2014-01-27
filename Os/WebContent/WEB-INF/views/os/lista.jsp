@@ -53,6 +53,7 @@
 			<td>${os.os_Prioridade}</td>
 			<td>${os.os_DataConclusao}</td>
 			<td>${os.os_Obs}</td>
+			<td><a href="exibeOs?id=${os.id}">Alterar</a></td>
 			<td><a href="removeOs?id=${os.id}">Remover</a></td>
 			<!--  Colocar removeOs como requestMapping no OsController para remover OS = CONCLUÍDO -->
 			</tr>

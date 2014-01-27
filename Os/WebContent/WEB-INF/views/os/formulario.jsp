@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="f"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -62,11 +63,12 @@
 					<td><textarea rows="3" cols="100" name="os_obs"></textarea></td>
 				</tr>
 				<tr>
-					<td align="center"><b><input type="submit"
-							value="Inserir Ordem de Serviço"></b></td>
+					<td align="center"><input type="submit"
+							value="Inserir Ordem de Serviço"></td>
 				</tr>
 			</table>
 			</form>
-			Caso não redirecione automaticamente, acesse o link para o <a href=listaOs>Sistema</a>
+
+			<a href=listaOs>Cancelar</a> e voltar para a listagem
 </body>
 </html>
