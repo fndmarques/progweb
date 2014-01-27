@@ -4,21 +4,21 @@ import java.util.List;
 
 import javax.persistence.*;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.edu.ufabc.os.modelo.Os;
 
+@Controller
 public class OsController {
 
 	// nova os - formulario
 	@RequestMapping("novaOs")
 	 public String form() {
-	  return "os/formulario.jsp";
+	  return "os/formulario";
 	 }
 	
-	
-	/*
 	// insere os
 	@RequestMapping("insereOs")
 	 public String insere(Os os) {
@@ -85,7 +85,7 @@ public class OsController {
 	manager.close();
 	return "os/lista";
 	}
-	*/
+
 
 	
 	
