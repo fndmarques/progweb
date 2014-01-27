@@ -6,6 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>OS adicionada</title>
 </head>
-<body>Nova OS adicionada com sucesso!
+<body>OS, (Id: ${os.id}) adicionada com sucesso!
+<!-- Inserir link para voltar para Listagem de Os's = CONCLUÍDO-->
+<br><br>
+<br><a href="novaOs">Inserir nova OS</a>
+<br><a href="listaOs">Voltar para a Listagem</a>
 </body>
 </html>
