@@ -14,8 +14,8 @@
 		Empresa: <input type="text" id="empresa" name="empresa" value="${os.empresa}"/><br />
 		Nome: <input type="text" id="nome" name="nome" value="${os.nome}"/><br />
 		Telefone <input type="text" id="telefone" name="telefone" value="${os.telefone}"/><br />
-		Email: <input type="text" id="email" name="email" value="${aluno.email}" /><br /> 
-		Descrição: <input type="text" id="descricao" name="descricao" value="${aluno.os_Descricao}" /><br /> 
+		Email: <input type="text" id="email" name="email" value="${os.email}" /><br /> 
+		Descrição: <input type="text" id="descricao" name="descricao" value="${os.os_Descricao}" /><br /> 
 		Solução: <input type="text" id="solucao" name="solucao" value="${os.os_Solucao}"/><br />
 		Data de Atendimento: <input type="text" id="dataAtendimento" name="dataAtendimento" value="${os.os_DataAbertura}"/><br />
 		Data de Conclusão: <input type="text" id="dataConclusao" name="dataConclusao" value="${os.os_DataConclusao}"/><br />

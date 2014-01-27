@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>OS adicionado</title>
+<title>OS adicionada</title>
 </head>
 <body>Nova OS adicionada com sucesso!
 </body>
