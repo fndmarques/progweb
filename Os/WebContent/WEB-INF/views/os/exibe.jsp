@@ -6,6 +6,7 @@
 </head>
 <body>
 	<form action="alteraOs" method="post">
+	<input type="hidden" id="id" name="id" value="${os.id}"><br />
 		<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario = CONCLUÍDO-->
 		<table>
 			<tr>
@@ -56,9 +57,9 @@
 			</tr>
 			<tr>
 				<td><textarea rows="3" cols="100" name="os_Solucao"
-						value="${os.os_Solucao}="SIM""></textarea></td>
+						value="${os.os_Solucao}"></textarea></td>
 			</tr>
-			<td align="center"><h3><input type="checkbox" name="osconcluida" value="SIM"><b>OS
+			<td align="center"><h3><input type="checkbox" name="os_DataConclusao" value="SIM"><b>OS
 				Concluída</b></h3></td>
 			</tr>
 			<tr>
@@ -81,33 +82,6 @@
 			</tr>
 		</table>
 	</form>
-
-
-
-	<form action="alteraOs" method="POST">
-		<!-- Adicionar alteraOs no requestMapping do OsController para retornar os/formulario = CONCLUÍDO-->
-		<input type="hidden" id="id" name="id" value="${os.id}" /><br />
-
-		//Data de Abertura: <input type="text" id="dataAbertura"
-			name="dataAbertura" value="${os.os_DataAbertura}" /><br /> //Título:
-		<input type="text" id="titulo" name="titulo" value="${os.os_Titulo}" /><br />
-		//Empresa: <input type="text" id="empresa" name="empresa"
-			value="${os.empresa}" /><br /> //Nome: <input type="text" id="nome"
-			name="nome" value="${os.nome}" /><br /> //Telefone <input
-			type="text" id="telefone" name="telefone" value="${os.telefone}" /><br />
-		//Email: <input type="text" id="email" name="email"
-			value="${os.email}" /><br /> //Descrição: <input type="text"
-			id="descricao" name="descricao" value="${os.os_Descricao}" /><br />
-		//Solução: <input type="text" id="solucao" name="solucao"
-			value="${os.os_Solucao}" /><br /> //Prioridade: <input type="text"
-			id="prioridade" name="prioridade" value="${os.os_Prioridade}" /><br />
-		//Data de Conclusão: <input type="text" id="dataConclusao"
-			name="dataConclusao" value="${os.os_DataConclusao}" /><br />
-		Observações: <input type="text" id="obs" name="obs"
-			value="${os.os_Obs}" /><br /> <input type="submit" value="Alterar" />
-
-	</form>
-	
 	
 	<a href=listaOs>Cancelar</a> e voltar para a listagem
 </body>

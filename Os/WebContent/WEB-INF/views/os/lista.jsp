@@ -10,11 +10,13 @@
 </head>
 <body>
 
-	<img src="resources/images/ufabc.jpg" alt="Logo UFABC" />
+	<div align="center">
+	<img src="resources/images/ufabc.jpg"  alt="Logo UFABC" />
 	<h1>
-		<b>Sistema de abertura e controle de chamados</b>
+		<b><font color="blue" align="center">Sistema de abertura e controle de chamados</font></b>
 	</h1>
-
+	</div>
+	
 	<table border=1>
 		<tr bgColor="#AA0000">
 			<td><b><font color="#FFFFFF">Id</font></b></td>
@@ -30,7 +32,7 @@
 			<td><b><font color="#FFFFFF">Data de Conclusão</font></b></td>
 			<td><b><font color="#FFFFFF">Observações</font></b></td>
 		</tr>
-
+	<tr>
 		<c:forEach items="${oses}" var="os" varStatus="i">
 			<c:choose>
 
@@ -41,6 +43,7 @@
 					<tr bgColor="#FFFFBB">
 				</c:otherwise>
 			</c:choose>
+			
 			<td>${os.id}</td>
 			<td>${os.os_DataAbertura}</td>
 			<td>${os.os_Titulo}</td>
