@@ -10,45 +10,57 @@
 </head>
 <body>
 
-<img src="resources/images/ufabc.jpg" alt="Logo UFABC" />
+	<img src="resources/images/ufabc.jpg" alt="Logo UFABC" />
+	<h1>
+		<b>Sistema de abertura e controle de chamados</b>
+	</h1>
 
 	<table border=1>
-		<tr>
-			<td><b>Id</b></td>
-			<td><b>Data de Abertura</b></td>
-			<td><b>Título</b></td>
-			<td><b>Empresa</b></td>
-			<td><b>Nome</b></td>
-			<td><b>Telefone</b></td>
-			<td><b>E-mail</b></td>
-			<td><b>Descrição</b></td>
-			<td><b>Solução</b></td>
-			<td><b>Data de Atendimento</b></td>
-			<td><b>Data de Conclusão</b></td>
-			<td><b>Observações</b></td>
+		<tr bgColor="#AA0000">
+			<td><b><font color="#FFFFFF">Id</font></b></td>
+			<td><b><font color="#FFFFFF">Data de Abertura</font></b></td>
+			<td><b><font color="#FFFFFF">Título</font></b></td>
+			<td><b><font color="#FFFFFF">Empresa</font></b></td>
+			<td><b><font color="#FFFFFF">Nome</font></b></td>
+			<td><b><font color="#FFFFFF">Telefone</font></b></td>
+			<td><b><font color="#FFFFFF">E-mail</font></b></td>
+			<td><b><font color="#FFFFFF">Descrição</font></b></td>
+			<td><b><font color="#FFFFFF">Solução</font></b></td>
+			<td><b><font color="#FFFFFF">Data de Atendimento</font></b></td>
+			<td><b><font color="#FFFFFF">Data de Conclusão</font></b></td>
+			<td><b><font color="#FFFFFF">Observações</font></b></td>
 		</tr>
-		
-		<c:forEach items="${suporte}" var="os">
-			<tr>
-				<td>${os.id}</td>
-				<td>${os.os_DataAbertura}</td>
-				<td>${os.os_Titulo}</td>
-				<td>${os.empresa}</td>
-				<td>${os.nome}</td>
-				<td>${os.telefone}</td>
-				<td>${os.email}</td>
-				<td>${os.os_Descricao}</td>
-				<td>${os.os_DatAtendimento}</td>
-				<td>${os.os_DataConclusao}</td>
-				<td>${os.os_Obs}</td>
-				<td><a href="removeOs?id=${os.id}">Remover</a></td>
-				<!--  Colocar removeOs como requestMapping no OsController para remover OS = CONCLUÍDO -->
+
+		<c:forEach items="${oses}" var="os" varStatus="i">
+			<c:choose>
+
+				<c:when test="${i.count % 2 == 0}">
+					<tr bgColor="#FFFFFF">
+				</c:when>
+				<c:otherwise>
+					<tr bgColor="#FFFFBB">
+				</c:otherwise>
+			</c:choose>
+			<td>${os.id}</td>
+			<td>${os.os_DataAbertura}</td>
+			<td>${os.os_Titulo}</td>
+			<td>${os.empresa}</td>
+			<td>${os.nome}</td>
+			<td>${os.telefone}</td>
+			<td>${os.email}</td>
+			<td>${os.os_Descricao}</td>
+			<td>${os.os_DataAtendimento}</td>
+			<td>${os.os_DataConclusao}</td>
+			<td>${os.os_Obs}</td>
+			<td><a href="removeOs?id=${os.id}">Remover</a></td>
+			<!--  Colocar removeOs como requestMapping no OsController para remover OS = CONCLUÍDO -->
 			</tr>
+
 		</c:forEach>
 	</table>
 	<br>
 	<a href="novaOs">Inserir Nova OS</a>
 	<!-- Colocar "novaOs" como request mapping no OsController para redirecionar para os/formulario = CONCLUÍDO -->
-	
+
 </body>
 </html>

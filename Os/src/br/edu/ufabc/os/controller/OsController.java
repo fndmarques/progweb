@@ -29,7 +29,7 @@ public class OsController {
 	manager.persist(os);
 	manager.getTransaction().commit();
 	manager.close();
-	return "redirect:listaOs";
+	return "os/adicionado";
 	}
 	
 	// altera os
@@ -79,9 +79,9 @@ public class OsController {
 	EntityManager manager = factory.createEntityManager();
 	@SuppressWarnings("unchecked")
 	List<Os> oses = manager
-	.createQuery("select a from suporte as a").getResultList();
+	.createQuery("select a from Os as a").getResultList();
 	// verificar
-	model.addAttribute("os", oses);
+	model.addAttribute("oses", oses);
 	manager.close();
 	return "os/lista";
 	}
