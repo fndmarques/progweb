@@ -11,7 +11,7 @@
    <provider>org.hibernate.ejb.HibernatePersistence</provider>
 
    <!-- entidade mapeada -->
-   <class>br.edu.ufabc.os.modelo.</class>
+   <class>br.edu.ufabc.os.modelo.Os</class>
 
    <properties>
   <!-- dados da conexao -->
