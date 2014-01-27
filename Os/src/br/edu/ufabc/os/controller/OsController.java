@@ -3,12 +3,8 @@ package br.edu.ufabc.os.controller;
 import java.util.List;
 
 import javax.persistence.*;
-import javax.servlet.http.HttpServletResponse;
-import javax.validation.Valid;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.edu.ufabc.os.modelo.Os;
@@ -80,10 +76,10 @@ public class OsController {
 	.createEntityManagerFactory("os");
 	EntityManager manager = factory.createEntityManager();
 	@SuppressWarnings("unchecked")
-	List<Os> suporte = manager
-	.createQuery("select a from Os as a").getResultList();
+	List<Os> oses = manager
+	.createQuery("select a from suporte as a").getResultList();
 	// verificar
-	//model.addAttribute("os", os);
+	model.addAttribute("os", oses);
 	manager.close();
 	return "os/lista";
 	}
