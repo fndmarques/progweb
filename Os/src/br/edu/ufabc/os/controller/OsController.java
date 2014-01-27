@@ -15,8 +15,14 @@ import br.edu.ufabc.os.modelo.Os;
 
 public class OsController {
 
-	// insere os
+	// nova os - formulario
 	@RequestMapping("novaOs")
+	 public String form() {
+	  return "os/formulario";
+	 }
+	
+	// insere os
+	@RequestMapping("insereOs")
 	 public String insere(Os os) {
 	EntityManagerFactory factory = Persistence
 	.createEntityManagerFactory("os");

@@ -8,7 +8,7 @@
 </head>
 <body>
 <form action="insereOs" method="post">
-<!-- Adicionar insereOs no request mapping do OsController para inserir nova Os -->
+<!-- Adicionar insereOs no request mapping do OsController para inserir nova Os = CONCLUÍDO -->
  
 Data de Abertura: <input type="text" name="dataAbertura" /><br />
 Título: <input type="text" name="titulo" /><br />
@@ -19,7 +19,7 @@ Email: <input type="text" name="email" /><br />
 Descrição: <input type="text" name="descricao" /><br />
 Solução: <input type="text" name="solucao" /><br />
 Data de Atendimento: <input type="text" name="dataAtendimento" /><br />
-Data de Concçusão: <input type="text" name="dataConclusao" /><br />
+Data de Conclusão: <input type="text" name="dataConclusao" /><br />
 Observações: <input type="text" name="obs" /><br />
  
  <input type="submit" value="Inserir">
